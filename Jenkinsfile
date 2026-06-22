@@ -1,6 +1,6 @@
 node {
     stage('Checkout') {
-        git credentialsId: 'github-login', url: 'https://github.com/LikeCaffeine/20260622_Jenkins.git'
+        git credentialsId: 'github-login', branch:'main', url: 'https://github.com/LikeCaffeine/20260622_Jenkins.git'
     }
     
     stage('Build') {
